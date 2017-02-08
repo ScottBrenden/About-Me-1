@@ -1,12 +1,16 @@
 'use strict';
 
 var confirmQuiz = confirm('Hello, would you like take a quiz?');
-
 if(confirmQuiz === true) {
   console.log('Awesome! Lets get started!');
 } else {
   console.log('Too Bad, starting anyway.');
 }
+
+var user = prompt('First question! What is your name?');
+console.log(user + '? ' + 'That\'s a pretty cool name!');
+
+alert('Okay! ' + user + ', first question!');
 
 var quizResponseOne = prompt('Please Answer with Y or N. Does Enrique have any siblings?');
 
@@ -26,5 +30,7 @@ if(quizResponseTwo.toUpperCase() === 'Y') {
     console.log('You\'re wrong! Not even close to being right. Learn more about him!');
   }
 } else {
-  console.log();
+  console.log('You\'re wrong! Who doesn\'t love dogs!?');
 }
+
+alert('If you thought these questions were hard...... GET READY!');
