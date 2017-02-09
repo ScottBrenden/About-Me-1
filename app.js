@@ -41,18 +41,18 @@ if(quizResponseTwo.toUpperCase() === 'Y') {
 }
 //Start of question 3 with var prompt
 
-var questionResponseThree = prompt('Question #3. ' + user + ' , does Enrique love pizza? Y or N');
+var questionResponseThree = prompt('Question #3. ' + user + ' , does Enrique love pizza? Y or N.');
 
 if(questionResponseThree.toUpperCase() === 'Y') {
   console.log(user + ' you must love pizza just as much as Enrique!');
 } else if(questionResponseThree.toUpperCase() === 'N') {
   console.log('I don\'t want to say you\'re wrong, but you\'re wrong.');
 } else {
-  console.log('Are you having fun? I\'m guessing you\'re typing poop or something weird like that are\'nt you?');
+  console.log('Are you having fun? I\'m guessing you\'re typing poop or something weird like that aren\'t you?');
 }
 //Start of question 4 with var prompt
 
-var questionResponseFour = prompt(user + ' do you think Enrique likes to fish?');
+var questionResponseFour = prompt(user + ' do you think Enrique likes to fish? Y or N.');
 
 if(questionResponseFour.toUpperCase() === 'Y') {
   console.log('He does like to fish! The fight you get when a fish is on the hook is what Enrique loves most about fishing.');
@@ -65,7 +65,7 @@ if(questionResponseFour.toUpperCase() === 'Y') {
 alert('By the end of this you\'ll know about Enrique as if you were a sibling of his!');
 //Start of question 5 with var prompt
 
-var questionResponseFive = prompt('Do you think Enrique\'s favorite movie is Good Will Hunting?');
+var questionResponseFive = prompt('Do you think Enrique\'s favorite movie is Good Will Hunting? Y or N.');
 
 if(questionResponseFive.toUpperCase === 'Y') {
   console.log('You\'ve known Enrique for a while now have\'nt you, because you are correct!');
