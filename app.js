@@ -1,6 +1,7 @@
 'use strict';
 
 var confirmQuiz = confirm('Hello, would you like take a quiz?');
+
 if(confirmQuiz === true) {
   console.log('Awesome! Lets get started!');
 } else {
@@ -12,7 +13,9 @@ console.log(user + '? ' + 'That\'s a pretty cool name!');
 
 alert('Okay ' + user + ', first question!');
 
+// Start of question 1 with var prompt
 var quizResponseOne = prompt( user + ' please answer with "Y" or "N" for all questions. Does Enrique have any siblings?');
+
 if(quizResponseOne.toUpperCase() === 'Y') {
   console.log('That is correct! Enrique has 4 brothers and 4 sisters.');
 } else if (quizResponseOne.toUpperCase() === 'N') {
@@ -20,8 +23,10 @@ if(quizResponseOne.toUpperCase() === 'Y') {
 } else {
   console.log('So...... that\'s not a Y or N response, but I\'ll let it slide this time. Enrique has 4 brothers and 4 sisters.');
 }
+// Start of question 2 with var prompt
 
 var quizResponseTwo = prompt('Once again please answer with Y or N. Does Enrique love dogs?');
+
 if(quizResponseTwo.toUpperCase() === 'Y') {
   var inceptionQuestion = prompt('WAIT ARE YOU SURE HE DOES? Answer Y or N.');
   if(inceptionQuestion.toUpperCase() === 'Y') {
@@ -34,10 +39,38 @@ if(quizResponseTwo.toUpperCase() === 'Y') {
 }else {
   console.log(user + ' you don\'t like to listen to directions do you? I\'ll give you this one again, he LOVES them!');
 }
+//Start of question 3 with var prompt
 
 var questionResponseThree = prompt('Question #3. ' + user + ' , does Enrique love pizza? Y or N');
+
 if(questionResponseThree.toUpperCase() === 'Y') {
   console.log(user + ' you must love pizza just as much as Enrique!');
-} else {
+} else if(questionResponseThree.toUpperCase() === 'N') {
   console.log('I don\'t want to say you\'re wrong, but you\'re wrong.');
+} else {
+  console.log('Are you having fun? I\'m guessing you\'re typing poop or something weird like that are\'nt you?');
+}
+//Start of question 4 with var prompt
+
+var questionResponseFour = prompt(user + ' do you think Enrique likes to fish?');
+
+if(questionResponseFour.toUpperCase() === 'Y') {
+  console.log('He does like to fish! The fight you get when a fish is on the hook is what Enrique loves most about fishing.');
+} else if(questionResponseFour.toUpperCase() === 'N') {
+  console.log('I\'m sorry but you\'re wrong. Enrique enjoys fishing');
+} else {
+  console.log('At this point I\'m guessing your Y and N keys are broken.');
+}
+
+alert('By the end of this you\'ll know about Enrique as if you were a sibling of his!');
+//Start of question 5 with var prompt
+
+var questionResponseFive = prompt('Do you think Enrique\'s favorite movie is Good Will Hunting?');
+
+if(questionResponseFive.toUpperCase === 'Y') {
+  console.log('You\'ve known Enrique for a while now have\'nt you, because you are correct!');
+} else if(questionResponseFive.toUpperCase() === 'N'){
+  console.log(user + ' how is this not his favorite movie. In fact how is this not everyone\'s favorite movie. You\'re wrong ' + user);
+} else {
+  console.log('I\'m wondering how much fun you\'re having right now........ He loves it by the way.');
 }
