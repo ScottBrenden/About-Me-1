@@ -10,13 +10,15 @@ if(confirmQuiz === true) {
 var user = prompt('First question! What is your name?');
 console.log(user + '? ' + 'That\'s a pretty cool name!');
 
-alert('Okay ' + user + ', first question!');
+alert('Okay ' + user + ', second question!');
 
 var quizResponseOne = prompt( user + ' please answer with Y or N. Does Enrique have any siblings?');
 if(quizResponseOne.toUpperCase() === 'Y') {
   console.log('That is correct! Enrique has 4 brothers and 4 sisters.');
+} else if (quizResponseOne.toUpper() === 'N') {
+  console.log('Enrique is latino, so of course he has siblings! Enrique has 4 brothers and 4 sisters.');
 } else {
-  console.log('Enrique is latino, so of course he has siblings! :P Enrique has 4 brothers and 4 sisters.');
+  console.log('So...... that\'s not a Y or N response, but I\'ll let it slide this time. Enrique has 4 brothers and 4 sisters.');
 }
 
 var quizResponseTwo = prompt('Once again please answer with Y or N. Does Enrique love dogs?');
@@ -31,4 +33,9 @@ if(quizResponseTwo.toUpperCase() === 'Y') {
   console.log('You\'re wrong! Who doesn\'t love dogs!?');
 }
 
-var questionResponseThree = prompt('Question #3. ' + user + '');
+var questionResponseThree = prompt('Question #4. ' + user + ' Does Enrique love pizza?');
+if(questionResponseThree.toUpperCase() === 'Y') {
+  console.log(user + ' You must love pizza just as much as Enrique!');
+} else {
+  console.log('I don\'t want to say you\'re wrong, but you\'re wrong.');
+}
