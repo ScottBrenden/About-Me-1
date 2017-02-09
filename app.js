@@ -67,10 +67,10 @@ alert('By the end of this you\'ll know about Enrique as if you were a sibling of
 
 var questionResponseFive = prompt('Do you think Enrique\'s favorite movie is Good Will Hunting? Y or N.');
 
-if(questionResponseFive.toUpperCase === 'Y') {
+if(questionResponseFive.toUpperCase() === 'Y') {
   console.log('You\'ve known Enrique for a while now have\'nt you, because you are correct!');
 } else if(questionResponseFive.toUpperCase() === 'N'){
-  console.log(user + ' how is this not his favorite movie. In fact how is this not everyone\'s favorite movie. You\'re wrong ' + user);
+  console.log(user + ' how is this not his favorite movie. In fact how is this not everyone\'s favorite movie. You\'re wrong ' + user + '.');
 } else {
   console.log('I\'m wondering how much fun you\'re having right now........ He loves it by the way.');
 }
