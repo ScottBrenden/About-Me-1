@@ -75,16 +75,19 @@ if(questionResponseFive.toUpperCase() === 'Y') {
   console.log('I\'m wondering how much fun you\'re having right now........ He loves it by the way.');
 }
 
-// var numberQuestion = prompt(user + ' what do you think is Enrique\'s favorite between 1-10 is? I\'ll give you four attempts.');
-var correctNumber = '7';
-var tries = [1,2,3,4];
 var numberQuestion = prompt(user + ' what do you think is Enrique\'s favorite between 1-10 is? I\'ll give you four attempts.');
-for(var i = 0;i > tries.length; i++) {
+var correctNumber = '7';
+var tries = 4;
+var numberQuestion = prompt(user + ' what do you think is Enrique\'s favorite between 1-10 is? I\'ll give you four attempts.');
+
+for(var i = 0;i < 4; i++) {
   var numberQuestion = prompt(user + ' what do you think is Enrique\'s favorite between 1-10 is? I\'ll give you four attempts.');
   if(numberQuestion === '7'){
     alert(user + ' you are correct! 7 is his favorite number!');
-  } else if (i = tries.length) {
-    alert ('Sorry' + user + ' better luck next time.');
+    break;
+  } else if (i = tries) {
+    alert ('Sorry ' + user + ' better luck next time.');
+    break;
   } else{
   }
 }
