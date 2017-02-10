@@ -57,7 +57,7 @@ var questionResponseFour = prompt(user + ' do you think Enrique likes to fish? Y
 if(questionResponseFour.toUpperCase() === 'Y') {
   console.log('He does like to fish! The fight you get when a fish is on the hook is what Enrique loves most about fishing.');
 } else if(questionResponseFour.toUpperCase() === 'N') {
-  console.log('I\'m sorry but you\'re wrong. Enrique enjoys fishing');
+  console.log('I\'m sorry but you\'re wrong. Enrique enjoys fishing.');
 } else {
   console.log('At this point I\'m guessing your Y and N keys are broken.');
 }
@@ -75,9 +75,16 @@ if(questionResponseFive.toUpperCase() === 'Y') {
   console.log('I\'m wondering how much fun you\'re having right now........ He loves it by the way.');
 }
 
+// var numberQuestion = prompt(user + ' what do you think is Enrique\'s favorite between 1-10 is? I\'ll give you four attempts.');
+var correctNumber = '7';
+var tries = [1,2,3,4];
 var numberQuestion = prompt(user + ' what do you think is Enrique\'s favorite between 1-10 is? I\'ll give you four attempts.');
-var numbers = [1,2,3,4,5,6,7,8,9,10];
-
-for(var i = 0; i = numbers[4]; i++){
-  
+for(var i = 0;i > tries.length; i++) {
+  var numberQuestion = prompt(user + ' what do you think is Enrique\'s favorite between 1-10 is? I\'ll give you four attempts.');
+  if(numberQuestion === '7'){
+    alert(user + ' you are correct! 7 is his favorite number!');
+  } else if (i = tries.length) {
+    alert ('Sorry' + user + ' better luck next time.');
+  } else{
+  }
 }
